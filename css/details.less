@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+ul li{list-style: none;}
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #f5f5f5;
+}
+// 头部
+.header{
+    width: 100%;
+    background-color:#ff8a00;
+    height: 5rem;
+    box-sizing: border-box;
+    padding: 0.4rem 3rem 0 3rem;
+    img{
+        height: 80%;
+    }
+    img:nth-of-type(2){
+        margin-left: 6rem;
+    }
+    img:nth-of-type(3){
+        margin-left: 1rem;
+    }
+}
+.swiper-slide img{
+    width: 100%;
+}
+.xinxi{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2rem;
+    display: flex;
+    .left{
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        p{
+            margin-bottom: 0.5rem;
+        }
+        p:nth-of-type(1){
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+        p:nth-of-type(2){
+            span{
+                color: #db4c3f;
+            }
+        }
+        p:nth-of-type(3){
+            color: #939494;
+        }
+        p:nth-of-type(4){
+            span{
+                display: inline-block;
+                background-color: #dee9f0;
+                color: #849aae;
+                padding: 0.3rem;
+            }
+        }
+    }
+    .right{
+        width: 1.4rem;
+        display: flex;
+        align-items: center;
+        img{
+            width: 100%;
+        }
+    }
+}
+// 详细信息
+.information{
+    width: 100%;
+    padding: 0 2rem;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid #e5e5e5;
+    ul{
+        li{
+            padding: 1.5rem 0;
+            border-bottom: 1px solid #e5e5e5;
+            display: flex;
+            p{
+                flex-grow: 1;
+            }
+        }
+        li:last-of-type{
+            border: none;
+            p{
+                text-align: center;
+                color: #999999;
+            }
+        }
+    }
+}
+// 房源特色
+.trait{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 2rem;
+    background-color: #fff;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 1.2rem;
+    .trait-title{
+        padding:2rem 0 ;
+        font-size: 1.7rem;
+        color: #ff8a00;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .trait-main{
+        padding:2rem 0 ;
+        font-size: 1.3rem;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .trait-more{
+        width: 100%;
+        padding:2rem 0 ;
+        text-align: center;
+        color: #999999;
+    }
+}
+// 户型分间
+.type{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 2rem;
+    background-color: #fff;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 1.2rem;
+    .type-title{
+        padding:2rem 0 ;
+        font-size: 1.7rem;
+        color: #ff8a00;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    ul{
+        width: 100%;
+        li{
+            padding:2rem 0 ;
+            width: 100%;
+            display: flex;
+            border-bottom: 1px solid #ff8a00;
+            .left{
+                width: 7rem;
+                height: 7rem;
+                margin-right: 0.7rem;
+                img{
+                    width: 100%;
+                }
+            }
+            .right{
+                display: flex;
+                flex-grow: 1;
+                flex-direction: column;
+                justify-content: space-between;
+                p:nth-of-type(1){
+                    color: black;
+                    font-weight: bold;
+                    font-size: 1.3rem;
+                }
+                p:nth-of-type(3){
+                    span{
+                        display: inline-block;
+                        background-color: #dee9f0;
+                        color: #849aae;
+                        padding: 0.3rem;
+                    }
+                }
+            }
+        }
+        li:last-of-type{
+            border-bottom: none;
+        }
+    }
+}
+// 对口学校
+.school{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 2rem;
+    background-color: #fff;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 1.2rem;
+    .school-title{
+        padding:2rem 0 ;
+        font-size: 1.7rem;
+        font-weight: bold;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    ul{
+        li{
+            padding: 1.5rem 0;
+            border-bottom: 1px solid #e5e5e5;
+            display: flex;
+            p{
+                flex-grow: 1;
+                span{
+                    color: #999999;
+                }
+            }
+        }
+        li:last-of-type{
+            border: none;
+            p{
+                text-align: center;
+                color: #999999;
+            }
+        }
+    }
+}
+//位置及周边
+.map{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 2rem;
+    background-color: #fff;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 1.2rem;
+    .map-title{
+        padding:2rem 0 ;
+        font-size: 1.7rem;
+        font-weight: bold;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .map-art{
+        padding:2rem 0 ;
+        height: 16rem;
+    }
+}
+// 推荐房源
+.suggest{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 2rem;
+    background-color: #fff;
+    border-top: 1px solid #e5e5e5;
+    .suggest-title{
+        padding:2rem 0 ;
+        font-size: 1.7rem;
+        font-weight: bold;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    ul{
+        width: 100%;
+        li{
+            padding: 1.5rem 0 ;
+            width: 100%;
+            border-bottom: 1px solid #e5e5e5;
+            .art{
+                width: 100%;
+                display: flex;
+                .left{
+                    width: 8.1rem;
+                    height: 8.1rem;
+                    margin-right: 1rem;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .right{
+                    display: flex;
+                    flex-grow: 1;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    p:nth-of-type(1){
+                        font-weight: bold;
+                        font-size: 1.7rem;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    p:nth-of-type(2){
+                        display: flex;
+                        span:nth-of-type(1){
+                            display: flex;
+                            flex-grow: 1;
+                        }
+                        span:nth-of-type(2){
+                            color: #ff8a00;
+                        }
+                    }
+                    p:nth-of-type(3){
+                        display: flex;
+                        color: #8b8b8b;
+                        span:nth-of-type(1){
+                            display: flex;
+                            flex-grow: 1;
+                        }
+                    }
+                    p:nth-of-type(4){
+                        span{
+                            display: inline-block;
+                            background-color: #dee9f0;
+                            color: #849aae;
+                            padding: 0.3rem;
+                        }
+                    }
+                }
+            }
+            .bot{
+                margin-top: 0.5rem;
+                padding: 1rem 0 ;
+                background-color: #f2f2f2;
+                padding-left: 0.5rem;
+            }
+        }
+    }
+    .like{
+        width: 100%;
+        text-align: center;
+        color: #999999;
+        padding: 2rem 0;
+    }
+}
+// 尾部
+.footer{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    background-color: #2f3130;
+    .footer-title{
+        height: 4rem;
+        color: #939494;
+        font-size: 1.2rem;
+        line-height: 4rem;
+        border-bottom: 1px solid #939494;
+    }
+    .foot-center{
+        width: 100%;
+        height: 6.4rem;
+        display: flex;
+        .foot-box{
+            width: 50%;
+            box-sizing: border-box;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-left: 1rem;
+            .left{
+                width: 2rem;
+                margin-right: 1.4rem;
+            }
+            .right{
+                p{
+                    text-align: center;
+                    color: #939494;
+                }
+            }
+        }
+    }
+    .foot-bot{
+        width: 100%;
+        height: 4rem;
+        p{
+            text-align: center;
+            color: #939494;
+        }
+    }
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>主页</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<!-- 头部 -->
+<header class="header">
+    <img src="./image/index/logo.jpg" alt="">
+    <img src="./image/index/my.jpg" alt="">
+    <img src="./image/index/xiazai.jpg" alt="">
+</header>
+<!-- 搜索+标志 -->
+<div class="logo">
+    <div class="search">
+        <div class="i"><img src="./image/index/seach.jpg" alt=""></div>
+        <input type="search" placeholder="输入小区或商圈名开始找房咯！">
+    </div>
+</div>
+<!-- 工具选项 -->
+<div class="tool">
+    <ul class="clearfix">
+        <li>
+            <img src="./image/index/index_03.png" alt="">
+            <p>二手房</p>
+        </li>
+        <li>
+            <img src="./image/index/index_05.png" alt="">
+            <p>新房</p>
+        </li>
+        <li>
+            <img src="./image/index/index_07.png" alt="">
+            <p>租房</p>
+        </li>
+        <li>
+            <img src="./image/index/index_09.png" alt="">
+            <p>卖房</p>
+        </li>
+    </ul>
+</div>
+<!-- 标志2 -->
+<div class="logo2"></div>
+<!-- 热门 -->
+<div class="hot">
+    <p>热门房源</p>
+    <p>Hot house</p>
+</div>
+<!-- 正文 -->
+<article class="article">
+    <ul>
+        <li>
+            <img src="./image/index/img1.jpg" alt="" class="left">
+            <div class="right-box">
+                <p>文化部中间层  一层带阁楼</p>
+                <p><span>2室1厅96㎡南北</span><span>1105万</span></p>
+                <p><span>红庙北里</span><span>14268元/平</span></p>
+                <p><span>学区房</span> <span>独家</span></p>
+            </div>
+        </li>
+        <li>
+            <img src="./image/index/img2.png" alt="" class="left">
+            <div class="right-box">
+                <p>光大水墨  精装复式 稀缺</p>
+                <p><span>室1厅96㎡南北</span><span>280万</span></p>
+                <p><span>光大水墨</span><span>14268元/平</span></p>
+                <p><span>学区房</span> <span>独家</span> <span>满五唯一</span></p>
+            </div>
+        </li>
+        <li>
+            <img src="./image/index/img3.png" alt="" class="left">
+            <div class="right-box">
+                <p>南北通透两居  精装修 无</p>
+                <p><span>2室1厅96㎡南北</span><span>320万</span></p>
+                <p><span>北京新天地</span><span>14268元/平</span></p>
+                <p><span>地铁房</span> <span>独家</span></p>
+            </div>
+        </li>
+    </ul>
+</article>
+<!-- 猜你喜欢 -->
+<div class="like">
+    <div class="like-title clearfix">
+        <p>热门关注</p>
+        <p>友情链接</p>
+    </div>
+    <div class="like-art">
+        <div class="like-box">
+            <p>热门关注</p>
+            <p>友情链接</p>
+            <p>北京二手房</p>
+            <p>北京二手房价</p>
+            <p>海淀日租房</p>
+        </div>
+        <div class="like-box">
+            <p>朝阳新房</p>
+            <p>北京找房无忧</p>
+            <p>青年家园</p>
+            <p>免税房源</p>
+            <p>满五年唯一免税</p>
+        </div>
+    </div>
+</div>
+<!-- 尾部 -->
+<footer class="footer">
+    <p class="footer-title">北京找房无忧 > 首页</p>
+    <div class="foot-center">
+        <div class="foot-box">
+            <img src="./image/index/apple.png" alt="" class="left">
+            <div class="right">
+                <p>iPhone</p>
+                <p>客户端</p>
+            </div>
+        </div>
+        <div class="foot-box">
+            <img src="./image/index/android.png" alt="" class="left">
+            <div class="right">
+                <p>Android</p>
+                <p>客户端</p>
+            </div>
+        </div>
+    </div>
+    <div class="foot-bot">
+        <p>北京找房无忧房地产经纪公司</p>
+        <p>网络经营许可证京ICP备20160812号</p>
+    </div>
+</footer>
+<div class="down">
+    <div class="down-left">
+        <img src="./image/index/download.png">
+    </div>
+    <div class="down-center">
+        <p>找房无忧</p>
+        <p>市场行情，一手掌握！</p>
+    </div>
+    <p class="down-right">免费下载</p>
+</div>
+</body>
+<script>
+function setRem(){
+    var windw = document.documentElement.clientWidth || document.body.clientWidth;
+    var uiw = 320;
+    document.documentElement.style.fontSize = (windw/uiw)*10+'px'
+  }
+  setRem();
+  window.onresize = setRem;
+</script>
+</html>
