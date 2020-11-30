@@ -23,15 +23,14 @@
         <span>|</span>
         <div class="serch-right"><img src="./image/SecondHandList/search_03.png" alt=""></div>
     </div>
-
 </div>
 <!-- 导航栏 -->
 <nav class="nav">
     <ul class="nav-title">
-        <li id="address"><a>区域</a></li>
-        <li id="price"><a>价格</a></li>
-        <li id="genre"><a>房型</a></li>
-        <li id="more"><a>更多</a></li>
+        <li id="address" class="bg-bottom"><a>区域</a></li>
+        <li id="price" class="bg-bottom"><a>价格</a></li>
+        <li id="genre" class="bg-bottom"><a>房型</a></li>
+        <li id="more" class="bg-bottom"><a>更多</a></li>
     </ul>
 </nav>
 <!-- 蒙版 -->
@@ -217,57 +216,7 @@
 </footer>
 </body>
 <script src="./js/jquery-3.5.1.js"></script>
+<!-- <script src="./js/zepto.js"></script> -->
 <script src="./js/touch-0.2.14.min.js"></script>
-<script>
-    var address = document.getElementById('address');
-    var price = document.getElementById('price');
-    var genre = document.getElementById('genre');
-    var more = document.getElementById('more');
-
-    touch.on(address,'tap',function(){
-        if($('.address').is(":hidden")){
-            $('.none').hide();
-            $('.address').slideDown(500);
-        }
-        else{
-            $('.address').hide();
-        }
-    })
-    touch.on(price,'tap',function(){
-        if($('.price').is(":hidden")){
-            $('.none').hide();
-            $('.price').slideDown(500);
-        }
-        else{
-            $('.price').hide();
-        }
-    })
-    touch.on(genre,'tap',function(){
-        if($('.genre').is(":hidden")){
-            $('.none').hide();
-            $('.genre').slideDown(500);
-        }
-        else{
-            $('.genre').hide();
-        }
-    })
-    touch.on(more,'tap',function(){
-        if($('.more').is(":hidden")){
-            $('.none').hide();
-            $('.more').slideDown(500);
-        }
-        else{
-            $('.more').hide();
-        }
-    })
-
-
-    function setRem(){
-    var windw = document.documentElement.clientWidth || document.body.clientWidth;
-    var uiw = 320;
-    document.documentElement.style.fontSize = (windw/uiw)*10+'px'
-  }
-  setRem();
-  window.onresize = setRem;
-</script>
+<script src="./js/list.js"></script>
 </html>

@@ -356,3 +356,33 @@ body {
   text-align: center;
   color: #939494;
 }
+.register {
+  width: 100%;
+  padding-top: 0.9rem;
+  display: flex;
+}
+.register .register-left {
+  width: 20rem;
+  height: 3.9rem;
+  background-color: #ff8a00;
+  margin: 0 2rem;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.register .register-left img {
+  height: 2.1rem;
+  margin-right: 1.5rem;
+}
+.register .register-right {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  height: 3.9rem;
+}
+.register .register-right img {
+  height: 2.1rem;
+  margin-right: 0.5rem;
+}
